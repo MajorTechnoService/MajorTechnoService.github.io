@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
+
+body {
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+@media only screen and (min-width: 1088px) {
+  body {
+    /** background-image: url('/media/buildings.jpg'); */
+  }
+}
+#home-title {
+  display    : flexbox;
+  flex-direction: row;
+  text-align : center;
+  margin-top : 100px;
+  font-family: 'Barlow Condensed';
+}
+
+#logo {
+  margin       : 30px auto;
+  width        : auto;
+  height       : auto;
+  /* background: rgba(3, 63, 131, 0.151); */
+}
+
+#logo>img {
+  width: 100%;
+  max-width: 470px;
+  height: auto;
+}
+
+.tabs-frontpage {
+  width: 100%;
+}
+
+.element-frontpage>h2 {
+  text-align: center;
+}
+
+.element-frontpage {
+  background-color  : #f6fcff;
+  border-radius     : 8px;
+  border            : 0px solid rgba(0, 0, 0, 0.185);
+  margin            : 10px;
+  box-shadow        : 6px 6px 9px #dedede;
+  -moz-box-shadow   : 6px 6px 9px #dedede;
+  -webkit-box-shadow: 6px 6px 9px #dedede;
+  filter            : progid:DXImageTransform.Microsoft.Shadow(color='#dedede', Direction=135, Strength=10);
+  min-height        : 200px;
+}

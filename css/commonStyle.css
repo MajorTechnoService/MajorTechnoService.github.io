@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
+
+body {
+  padding-top: 50px;
+}
+
+.link-unstyled,
+.link-unstyled:link,
+.link-unstyled:hover {
+  color          : inherit;
+  text-decoration: inherit;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 110px;
+  }
+
+  .google-maps {
+    padding-left : 20px;
+    padding-right: 20px;
+  }
+
+  #contact-button::after {
+    content: none;
+  }
+
+  #contact-button i {
+    display: block;
+  }
+
+  .header-container {
+    padding: 15px 0 0 0;
+  }
+}
+
+header {
+  background: rgb(255, 255, 255);
+  z-index   : 10;
+}
+
+#header-title {
+  font-family: 'Barlow Condensed';
+  font-size  : 45px;
+}
+
+@media (min-width: 768px) {
+  #contact-button::after {
+    content: "Contatti";
+  }
+
+  #contact-button i {
+    display: none;
+  }
+
+  #header-title {
+    font-size: 40px;
+  }
+
+  .header-container {
+    padding: 15px 0 15px 0;
+  }
+}
+
+.article {
+  display   : flexbox;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.article p {
+  text-align: left;
+}
+
+.navbar>ul {
+  padding-right: 0.5em;
+}
+
+.copyright {
+  background-color: rgb(44, 159, 212);
+}
+
+#footer {
+  margin-top         : 100px;
+  background-color   : rgb(95, 183, 218);
+  /*
+  background         : url("https://pixabay.com/get/g915b5f9985fd9c526a85218f3be4f92e29da1f1de51510f5e589728152ca9ceef30e08a5d38a66fac4f3b7fa856af6d1_1280.jpg");
+  */
+  background-size    : cover;
+  background-position: bottom;
+  color              : white;
+  display            : flexbox;
+}
+
+div .img {
+  border: 2px solid white;
+  float : left;
+  margin: 10px;
+  width : 100px;
+  height: 100px;
+}
+
+.google-maps {
+  position      : relative;
+  padding-bottom: 56.25%;
+  overflow      : hidden;
+  border-radius : 13px;
+}
+
+.google-maps>iframe {
+  position: absolute;
+  top     : 0;
+  left    : 0;
+  height  : 100%;
+  width   : 100%;
+}
+
+#footer-list {
+  padding-left   : 0px;
+  list-style-type: none;
+}
+
+#footer-list>li {
+  display              : grid;
+  grid-template-columns: 30px auto;
+  justify-content      : flex-start;
+  align-items          : center;
+}
+
+#footer-list li::before {
+  content: ">";
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 95% !important;
+  }
+}
+
+.error-container {
+  margin       : 30px auto;
+  width        : auto;
+  margin: 330px 0;
+  padding-bottom: 150px;
+  text-align: center;
+  /* background: rgba(3, 63, 131, 0.151); */
+}
