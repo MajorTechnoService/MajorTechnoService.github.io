@@ -3,18 +3,12 @@
 body {
   background-repeat: no-repeat;
   background-size: 100%;
-
-}
-@media only screen and (min-width: 1088px) {
-  body {
-    /** background-image: url('/media/buildings.jpg'); */
-    display: table;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 #home-title {
   display: table-cell;
