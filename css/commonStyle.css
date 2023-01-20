@@ -10,6 +10,16 @@ body {
   padding-top: 50px;
 }
 
+.companies-list {
+  text-align: left;
+}
+
+.companies-list > li {
+  list-style-type: none;
+  font-weight: bold;
+  margin: 0;
+}
+
 .inline {
   display: inline;
 }
@@ -53,6 +63,15 @@ body {
 }
 
 @media (max-width: 768px) {
+  .img-sostituzioni {
+    float: none;
+    width:490px;
+    height:auto;
+    margin:0px 0 0 0;
+    border-radius: 6px;
+    padding: 0px;
+  }
+
   body {
     padding-top: 110px;
   }
@@ -74,6 +93,27 @@ body {
     padding: 15px 0 0 0;
   }
 }
+
+.img-sostituzioni {
+  float:right;
+  width:490px;
+  height:auto;
+  margin:6px 0 0 0;
+  border-radius: 12px;
+  padding: 7px;
+}
+
+
+.iso-tag {
+  width: 220px;
+}
+
+.iso-tag-table {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
 
 header {
   background: rgb(255, 255, 255);
