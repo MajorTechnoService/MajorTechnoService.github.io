@@ -78,10 +78,13 @@
         <meta name="theme-color" content="#ffffff">
     </head>
     <body>
+        <div class="loader-container">
+            <div class="loader"></div>  
+          </div>
 
-    <header-component></header-component>
+    <header-component class="header loading"></header-component>
 
-    <div class="container mb-5" id="home-title">
+    <div class="container mb-5 loading" id="home-title">
     <div id="logo" ><img src="/media/MajorTecnoService.png" alt="logo aziendale"></div>
     <h1>Major Techno Service s.r.l.s.</h1>
     <h2>di</h2>
@@ -89,7 +92,7 @@
     </div>
 
     <!-- Tabs -->
-    <div class="container">
+    <div class="container loading">
         <div class="row justify-content-md-center tabs-frontpage">
             <div class="pt-4 col-md-3 element-frontpage">
                 <a href="/../../pages/letture/" class="link-unstyled">
@@ -129,7 +132,7 @@
         </div>
     </div>
 
-    <footer-component></footer-component>
+    <footer-component class="footer loading"></footer-component>
 
     <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
     </body>

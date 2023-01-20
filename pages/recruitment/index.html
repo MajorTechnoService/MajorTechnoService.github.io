@@ -4,13 +4,13 @@
     <!-- Cookie Consent by PrivacyPolicies.com https://www.PrivacyPolicies.com -->
     <script type="text/javascript" src="//www.privacypolicies.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
     <script type="text/javascript" charset="UTF-8">
-    document.addEventListener('DOMContentLoaded', function () {
-    cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express","palette":"dark","language":"it","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"www.mts2021.it","website_privacy_policy_url":"https://www.mts2021.it/pages/cookie/"});
-    });
+      document.addEventListener('DOMContentLoaded', function () {
+        cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express","palette":"dark","language":"it","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"www.mts2021.it","website_privacy_policy_url":"https://www.mts2021.it/pages/cookie/"});
+      });
     </script>
 
     <!-- Jquery -->
-            <script type="text/plain" cookie-consent="functionality" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script type="text/plain" cookie-consent="functionality" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- end of Jquery-->
 
     <!-- Google Maps -->
@@ -18,14 +18,14 @@
     <!-- end of Google Maps-->
 
     <!-- Google Analytics -->
-            <script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-BTPPDPSNLS"></script>
-            <script type="text/plain" cookie-consent="tracking">
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+      <script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-BTPPDPSNLS"></script>
+      <script type="text/plain" cookie-consent="tracking">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-            gtag('config', 'G-BTPPDPSNLS');
-            </script>
+      gtag('config', 'G-BTPPDPSNLS');
+      </script>
 
     <!-- end of Google Analytics-->
 
@@ -65,15 +65,17 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body>
 
+<body >
+  <div class="loader-container">
+    <div class="loader"></div>  
+  </div>
 <!-- Header -->
-<header-component></header-component>
+<header-component class="header loading"></header-component>
 <!-- /Header -->
 
-
 <!-- article -->
-<div class="container article pt-3" >
+<div class="container article pt-3 loading">
   <div class="row justify-content-md-center">
     <div class="col-md-9 ">
 
@@ -82,47 +84,43 @@
         <div style="text-align: left;">
           <h3>Posizioni aperte</h3>
           <br>
-          <h4>Addetto letturista</h4>
-            <p>G.P.S. e G.P. Service possiede numerose auto aziendali
-                a e ad oggi, si sono evolute al punto da essere 
-                un’ottima scelta di acquisto.</p>
-            <p>I vantaggi di un’auto a metano:</p>  
-            <ul >
-              <li><p>
-                Risparmio: un sensibile risparmio è rappresentato 
-                dal costo del carburante: 0,90 euro/kg, contro 
-                gli 1,5 euro/l della benzina e gli 1,35 euro/l 
-                del gasolio, in crescita vertiginosa per altro 
-                negli ultimi tempi.
-              </p>
-              </li>
-            </ul>
-          <p>
-            Il metano rimane comunque, a livello di costi, 
-            più vantaggioso. Sempre nell’ottica della diminuzione 
-            delle polveri sottili della massima salvaguardia
-              possibile dell’ambiente, G.P.Service ha in
-              programma entro il prossimo anno 2018 la 
-              sostituzione di tutti i motocicli in uso con 
-              le loro corrispondenti versioni Elettriche. 
-              Sia G.P.S. che G.P. Service al fine di incrementare 
-              la vocazione ecologistica della ns. Azienda e 
-              nella logica di contenere i costi, stiamo sostituendo
-                i nostri scooter con la versione alimentata
-                ad elettricità.                
+          <h4>Letturista contatori idrici</h4>
+          <div>
+            <h6 class="inline"><i class="bi bi-geo-alt"></i> Zona:</h6>
+            <p class="inline">
+              La Spezia (Framura, Bonasola, Levanto, Corrodano, Brugnato, Borghetto, Beverino, Pignone, Vernazza, Calice al Conovoglio, Volano, La Spezia, Ortonovo, Ameglia).
+            </p>
+          </div>
+          <div>
+            <h6 class="inline"><i class="bi bi-file-earmark-text"></i> Contratto:</h6>
+            <p class="inline">
+             Contratto CCNL Commercio Terziario Confimea. Tempo pieno, Tempo determinato.
+            </p>
+          </div>
+          <div>
+            <h6 class="inline"><i class="bi bi-clipboard-check"></i> Requisiti:</h6>
+            <p class="inline">
+             Ottima manualità, Patente B.
+            </p>
+          </div>
+          <div>
+            <h6 class="inline"><i class="bi bi-gift"></i> Benefit:</h6>
+            <p class="inline">
+             Cellulare aziendale, orario flessibile.
+            </p>
+          </div>
+          <p class="pt-2">
+            Non è richiesta esperienza, si offre contratto di assunzione a tempo determinato con possibilità di passaggio a tempo indeterminato dopo un periodo di prova.               
           </p>
         </div>
   
     </div>
   </div>
 </div>
-
-
 <!-- /article -->
 
-
 <!-- Footer -->
-<footer-component></footer-component>
+<footer-component class="footer loading"></footer-component>
 <!-- /Footer -->
     
 <!-- Javascript -->

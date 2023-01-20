@@ -10,6 +10,41 @@ body {
   padding-top: 50px;
 }
 
+.inline {
+  display: inline;
+}
+
+.loading {
+  visibility: hidden;
+}
+
+.loader-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid rgb(44, 159, 212);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1.4s ease infinite;
+  margin: 0 auto;
+  top: 40%;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .link-unstyled,
 .link-unstyled:link,
 .link-unstyled:hover {
