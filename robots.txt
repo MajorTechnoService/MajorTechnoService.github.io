@@ -6,13 +6,12 @@ Disallow: /404.html
 
 User-agent: *
 Allow: /components
-
+Allow: /pages
+Allow: /
 
 User-agent: MJ12bot
 Disallow: /
 
-User-agent: AhrefsBot
-Disallow: /
 
 User-agent: BLEXBot
 Disallow: /
@@ -29,14 +28,6 @@ Disallow: /
 
 # Block Uptime robot
 User-agent: UptimeRobot/2.0
-Disallow: /
-
-# Block Ezooms Robot
-User-agent: Ezooms Robot
-Disallow: /
-
-# Block Perl LWP
-User-agent: Perl LWP
 Disallow: /
 
 # Block netEstate NE Crawler (+http://www.website-datenbank.de/)
@@ -67,4 +58,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: NOMESITOWEB.COM/sitemap.xml
+Sitemap: www.mts2021.it/sitemap.xml
