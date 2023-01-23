@@ -58,4 +58,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: www.mts2021.it/sitemap.xml
+Sitemap: https://www.mts2021.it/sitemap.xml
